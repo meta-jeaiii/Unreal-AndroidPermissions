@@ -33,6 +33,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "BPPlatformSpecsFuncs")
 	FString GetDeviceModel();
 
+	UFUNCTION(BlueprintCallable, Category = "BPPlatformSpecsFuncs")
+	FString GetGPUFamily();
+
 	// Dynamic states that get checked every tick.  These are binded to UMG widgets.
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "BPPlatformSpecsStates")
 	bool BatteryIsCharging;

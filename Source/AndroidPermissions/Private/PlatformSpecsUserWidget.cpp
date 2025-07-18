@@ -57,3 +57,12 @@ FString UPlatformSpecsUserWidget::GetDeviceModel()
 	return TEXT("");
 #endif
 }
+
+FString UPlatformSpecsUserWidget::GetGPUFamily()
+{
+#if PLATFORM_ANDROID
+	return FAndroidMisc::GetGPUFamily();
+#else
+	return TEXT("");
+#endif
+}
